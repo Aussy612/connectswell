@@ -23,6 +23,23 @@ def contact_us(request):
     return render(request, 'pages/contact-us.html', {'form': form})
 
 
+def trial_request(request):
+    if request.method == 'POST':
+        form = TrialForm(request.POST)
+        if form.is_valid():
+            # EMAIL CODE
+            sender_name = form.cleaned_data['name']
+            sender_email = form.cleaned_data['email']
+
+            message = "{0} has sent you a new message:\n\n{1}".format(sender_name, form.cleaned_data['message'])
+            send_mail('New Enquiry', message, sender_email, ['brandon.haw@gmail.com'])
+            return HttpResponseRedirect('/signedup/')
+    else:
+        form = ContactForm()
+
+    return render(request, 'pages/contact-us.html', {'form': form})
+
+
 def org_contact(request):
     if request.method == 'POST':
         form = OrganizationForm(request.POST)

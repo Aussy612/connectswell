@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container text-center mt-10">
+
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <div class="row">(Link 1st Reward Pts)</div>
+      <div class="row">(Link 1st Reward Description)</div>
+      <div class="row">(Link 1st Reward Organization)</div>
+    </div>
+    <div class="col-sm-4">
+      <div class="row">(Link 2nd Reward Pts)</div>
+      <div class="row">(Link 2nd Reward Description)</div>
+      <div class="row">(Link 2nd Reward Organization)</div>
+    </div>
+    <div class="col-sm-4">
+            <div class="row">(Link 3rd Reward Pts)</div>
+      <div class="row">(Link 3rd Reward Description)</div>
+      <div class="row">(Link 3rd Reward Organization)</div>
+    </div>
+    <a href="{% url 'get-points' %}" class="btn btn-lg btn-outline-secondary main-btn"> Get Points</a>
+
+  </div>
+</div>
+
+
+{% endblock content %}

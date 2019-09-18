@@ -7,24 +7,18 @@
     <div class="container" id=header>
       <div class="container pt-10 pb-5">
         <h1 class="display-2 title text-center mt-5 mb-5" id=mainTitle>We Make Wellness Work</h1>
-        <h4 class="mt-5 text-center"> Blossome is connecting trusted wellness practitioners with organizations that need
-          their services most.</h4>
+        <h4 class="mt-5 text-center"> Looking to create a unique workplace wellness initiative for  your business?
+          <br>Blossome works with business across Toronto. Use the contact form below to redeem a free class.</h4>
 
-        <h3 class="display-4 text-center mt-5 mb-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-            data-aos-delay="250" data-aos-duration="500">Let's get started. I am:</h3>
+        <h4 class=" text-center mt-5 mb-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            data-aos-delay="250" data-aos-duration="500">Let's get started:</h4>
 
 
-        <div class="row text-center mt-5 " data-aos="zoom-in" data-aos-delay="200"
+        <div class="row text-center mt-5 p5 " data-aos="zoom-in" data-aos-delay="200"
              data-aos-anchor-placement="center-bottom" data-aos-duration="500" id=startButtons>
-          <div class="col-sm m-2">
-            <a href="{% url 'practitioners' %}" class="btn btn-lg btn-outline-secondary main-btn" role="button">
-                <h5 class="mb-0 m-1"> A wellness practitioner</h5>
-            </a>
-          </div>
-
-          <div class="col-sm m-2">
-            <a href="{% url 'organizations' %}" class="btn btn-lg btn-outline-secondary main-btn">
-              <h5 class="mb-0 m-1">Planning a wellness program</h5>
+          <div class="col-sm-12">
+            <a data-toggle="modal" data-target="#modalContactForm" class="btn btn-lg btn-outline-secondary main-btn" role="button">
+                <h5 class="mb-0 m-1"> Redeem Free Class</h5>
             </a>
           </div>
         </div>
@@ -51,7 +45,7 @@
 
   <!-- Start CARDS -->
 
-  <div class="container text-center justify-content-around mt-5" data-aos="fade-down"
+  <div class="container text-center justify-content-around mt-2" data-aos="fade-down"
        data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
     <h3 class="font-weight-light mb-3">Key Features</h3>
     <div class="card-group container">
@@ -80,7 +74,7 @@
 
               <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                  Our flexible scheduling is designed with busy wo-working spaces in mind. Create a workplace culture
+                  Our flexible scheduling is designed with busy co-working spaces in mind. Create a workplace culture
                   that
                   encourages wellness and reduces stress in your community through easy-to-implement classes.
                 </div>
@@ -115,9 +109,9 @@
               </div>
               <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
-                  Students are increasingly susceptible to stress, burnout and anxiety, especially around busy times of
+                  Students are increasingly susceptible to stress, burnout and anxiety especially around busy times of
                   the
-                  year with stress management techniques becoming increasingly important for mental health.
+                  year. Stress management techniques are becoming increasingly important for mental health!
                 </div>
               </div>
             </div>
@@ -129,7 +123,7 @@
           <img class="card-img-top mt-3" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/http://www.thebalancedpt.com/wp-content/uploads/2019/02/Yoga-Adjustment-2.jpg"
                alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title text-center">Posture</h5>
+            <h5 class="card-title text-center">Improve Resiliency</h5>
             <p class="card-text text-center"> Blossome equips your workspace with the supplies and know-how to run
               effective
               on-site physical wellness classes.</p>
@@ -200,9 +194,8 @@
                alt="Card image cap">
 
           <div class="card-body">
-            <h5 class="card-title text-center">Attention and Focus</h5>
-            <p> We use high tech biosensing tools to help our clients understand subjective and objective wellness
-              markers.</p>
+            <h5 class="card-title text-center"> Improve Recruitment </h5>
+            <p> Workplace wellness is one of the most important factors for new hires when choosing a career position.</p>
           </div>
 
           <div id="accordion">
@@ -212,14 +205,14 @@
                    aria-expanded="true" aria-controls="collapseSeven">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed">
-                    Biosensing Tools
+                    Meditation
                   </button>
                 </h5>
               </div>
 
               <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
                 <div class="card-body">
-                  Our innovative biosensing techniques utilize sensors that detect heart rate, breath and brain activity to allow clients a clear understanding of the effects of our practices.
+                  Meditation has been shown to <a href="https://www.healthline.com/nutrition/12-benefits-of-meditation#section3"> reduce stress and help control anxiety.</a>
                 </div>
               </div>
             </div>
@@ -229,14 +222,13 @@
                    aria-controls="collapseEight" id="headingEight">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed">
-                    Biofeedback
+                    Mindfulness
                   </button>
                 </h5>
               </div>
               <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
                 <div class="card-body">
-                 Biofeedback allows us peek into the hidden functioning inside the body to track wellness markers and
-                  determine effectiveness of wellness programs through a data driven approach and modify on the fly.
+                 Mindfulness has been shown to <a href="https://www.apa.org/monitor/2012/07-08/ce-corner">increase focus, boost working memory and improve cognitive function and satisfaction.</a>
                 </div>
               </div>
             </div>
@@ -251,8 +243,8 @@
               </div>
               <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
                 <div class="card-body">
-                  Neurofeedback is the process of "mirroring" the central nervous system or CNS back to itself using a brain scan tool. This self reflective technique has been shown to have many benefits in stress
-                  reduction and focus.
+                  Neurofeedback is the process of self reflection using technology such as EEg, allowing us to <a
+                  href="https://www.psychologytoday.com/ca/therapy-types/neurofeedback"> get a real time glimpse into the functioning of the brain.</a>
                 </div>
               </div>
             </div>
@@ -263,8 +255,7 @@
   </div>
 
   <div class=" container text-center mt-5 mb-5">
-    <p class="lead"> Our innovative programs are changing the role of wellness in organizations of all types and
-      sizes.</p>
+    <p class="lead"> Our innovative programs are changing the role of wellness in organizations of all sizes.</p>
     <a href="{% url 'about' %}" class="btn btn-lg btn-outline-secondary main-btn mb-5" role="button" data-aos="zoom-in"
        data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
       <h5>Learn More</h5>
@@ -311,23 +302,17 @@
   <div class="programBuilder container pb-1 ">
     <div class="row">
       <div class="col">
-        <p class="display-2 text-center mt-10 mb-3">Try our Wellness Packages</p>
+        <p class="display-2 text-center mt-10 mb-3">Book a Free Trial!</p>
         <p class="lead text-center mt-3"> Blossome is a no-hassle way to book flexible in-office wellness
           programs.
         <p>
-        <p class="lead text-center"><strong>Enter the size of your group </strong> and <strong> select the desired
-          services</strong> to receive a quote! </p>
+        <p class="lead text-center"> Get in touch through our contact form to schedule a free trial today. </p>
       </div>
-      <div class=" container text-center mt-3 mb-5">
-        <a href="{% url 'organizations' %}" class="btn btn-lg btn-outline-secondary main-btn mt-5" role="button">
-          <h5 class="mb-0 m-1">Book Now</h5>
+      <div class=" container text-center mt-3 mb-10">
+        <a data-toggle="modal" data-target="#modalContactForm"  class="btn btn-lg btn-outline-secondary main-btn mt-5" role="button">
+          <h5 class="mb-0 m-1">Book Free Trial Now</h5>
         </a>
       </div>
-    </div>
-    <div class=" border container mt-10 mb-10">
-      <p class=" display-2 text-center mb-5 mt-5">Blossome App Coming Soon</p>
-      <p class="lead text-center"> Please use our contact form to receive early access
-        to our platform.</p>
     </div>
   </div>
 

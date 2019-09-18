@@ -1,27 +1,13 @@
 from django import forms
 
 POSTURE_CHOICES = (
-    ('yoga', 'Yoga'),
-    ('zumba', 'Zumba'),
-    ('pilates', 'Pilates'),
-    ('tai chi', 'Tai Chi'),
-    ('ergonomics', 'Ergonomics'),
+
 )
 
 STRESS_REDUCTION = (
-    ('massage', 'Massage (RMT)'),
-    ('fst', 'FST'),
-    ('reiki', 'Reiki'),
-    ('reflexology', 'Reflexology'),
-    ('aromatherapy', 'Aromatherapy'),
 )
 
 ATTENTION_FOCUS = (
-    ('meditation', 'Meditation'),
-    ('mindfulness', 'Mindfulness'),
-    ('biofeedback', 'Biofeedback'),
-    ('counselling ', 'Counselling'),
-    ('nutrition-coaching', 'Nutrition/Health Coaching'),
 )
 
 
@@ -29,7 +15,9 @@ class ContactForm(forms.Form):
     name = forms.CharField(max_length=100)
     email = forms.EmailField()
     subject = forms.CharField(max_length=100)
-    message = forms.CharField(widget=forms.Textarea)
+    message = forms.CharField(widget=forms.Textarea,
+                              initial="How can we help?",
+                              )
 
 
 class PractitionerForm(forms.Form):
@@ -80,5 +68,15 @@ class OrganizationForm(forms.Form):
     )
     message = forms.CharField(widget=forms.Textarea,
                               initial="Please let us know what times work best for you. "
-                                      "Example, lunch and learn, after work, in the morning, etc",
+                                      "Example, lunch and learn, after work, in the morning, etc."
+                                      "We will be in touch with you shortly!",
                               required=False)
+
+
+class TrialForm(forms.Form):
+    name = forms.CharField(max_length=100)
+    email = forms.EmailField()
+    subject = forms.CharField(max_length=100)
+    message = forms.CharField(widget=forms.Textarea,
+                              initial="How can we help?",
+                              )

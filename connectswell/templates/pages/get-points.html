@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1 class="font-weight-light text-center mb-5 mt-10"> Get More Points</h1>
+  </div>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="row"> <h3 class="mb-3"> Partner Up!</h3></div>
+      <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aut consequuntur cupiditate dolor eaque enim, error fugit illo, impedit maiores optio quam quas quis quod sapiente sed sunt temporibus vel voluptates. Beatae blanditiis culpa deserunt, ducimus eaque, est fuga harum ipsa ipsam magni minus officiis quasi quos, sit suscipit!</div>
+      <a href="{% url 'my-profile' %}" class="btn btn-lg btn-outline-secondary main-btn mt-4"> My Profile</a>
+
+    </div>
+    <div class="col-sm-4">
+      <div class="row mb-3"><h3>Get Fit and Add Points</h3></div>
+      <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus dolorem fuga inventore modi nam nesciunt nostrum perspiciatis praesentium quos reiciendis, rem, veritatis vero. Adipisci assumenda consectetur, consequuntur, cumque dolorum est et eveniet harum in ipsum iure iusto magni maxime nostrum odio, officia quae repellat sed tempore voluptatem. Architecto, rem.</div>
+      <a href="{% url 'schedule' %}" class="btn btn-lg btn-outline-secondary main-btn mt-4"> View Schedule</a>
+
+    </div>
+    <div class="col-sm-4">
+      <div class="row"><h3>Get Rewards</h3></div>
+      <div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit perferendis placeat porro, quibusdam repellendus voluptates! Ab blanditiis delectus, esse nostrum odit quae repellat suscipit. Accusantium at illo iste laboriosam molestiae natus suscipit. Dolorem doloremque ea error et fugit modi numquam possimus repellat voluptatum! Aspernatur debitis dolores est iure molestiae.</div>
+        <a href="{% url 'rewards' %}" class="btn btn-lg btn-outline-secondary main-btn mt-4"> View Rewards</a>
+    </div>
+
+  </div>
+  <div class="text-center">        <a href="% url 'my-profile' %" class="btn btn-lg btn-outline-secondary main-btn mt-5"> My Profile</a>
+</div>
+
+</div>
+
+
+{% endblock content %}
